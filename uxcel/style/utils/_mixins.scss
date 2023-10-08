@@ -1,0 +1,16 @@
+@mixin nanum-font {
+  font-family: "Nanum Pen Script", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+@mixin inter-font {
+  font-family: "Inter", sans-serif;
+}
+@mixin sora-font {
+  font-family: "Sora", sans-serif;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

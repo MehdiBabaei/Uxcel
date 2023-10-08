@@ -1,0 +1,128 @@
+@import "../utils/variables";
+.all-btn {
+  display: flex;
+  gap: 10px;
+  &--login {
+    background-color: rgba(5, 6, 15, 0.05);
+    color: $p-h-black;
+    &:hover {
+      background-color: rgba(5, 6, 15, 0.1);
+      transition-duration: 0.4s;
+    }
+  }
+  &--primary {
+    background-color: $bg-btn;
+    color: $white;
+    &:hover {
+      opacity: 0.8;
+      transition-duration: 0.4s;
+    }
+  }
+  &--uxcel-team,
+  &--primary1 {
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  &--primary2 {
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+  &--social {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 28px;
+    height: 44px;
+    padding: 0 16px;
+    cursor: pointer;
+    width: 334px;
+    gap: 7px;
+    border: none;
+    &--primary {
+      background-color: $bg-btn;
+      color: $white;
+      width: 334px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+        background: hsla(
+          var(--purple-h),
+          var(--purple-s),
+          calc(var(--purple-1) - 8%),
+          var(--purple-a)
+        );
+      }
+    }
+    &--primary-1 {
+      background-color: $white;
+      margin-top: 16px;
+      border: 1px solid var(--black-200);
+      width: 334px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      &:hover {
+        background-color: var(--black-200);
+      }
+    }
+  }
+  .btn-p {
+    padding: 9px 16px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}
+.btn-more {
+  background-color: inherit;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &:hover {
+    background-color: $p-h-black;
+    color: $white;
+    transition-duration: 0.3s;
+  }
+  &--primary {
+    background-color: inherit;
+    color: $white;
+    border-radius: 10px;
+    border: 2px solid $white;
+    padding: 12px 16px;
+    cursor: pointer;
+    label {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &:hover {
+      background-color: $white;
+      color: $p-h-black;
+      transition-duration: 0.4s;
+    }
+  }
+}
+.btn-p-mobile {
+  padding: 7px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: auto;
+  height: 36px;
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
+  }
+}
